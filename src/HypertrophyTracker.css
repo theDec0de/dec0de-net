@@ -272,3 +272,277 @@
         }
     }
 }
+:root {
+    --primary-color: #56e295;
+    --secondary-color: rgba(86, 184, 226, 1);
+}
+
+.hypertrophy_tracker {   
+    font-family: Arial, Helvetica, sans-serif;
+
+    .header-banner,
+    .header-banner * {
+        box-sizing: border-box;
+    }
+
+    .header-banner {
+        background: #ffffff;
+        padding: 13px 10px 13px 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hypertrophy-tracker-label {
+        color: #619b8a;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        -webkit-text-stroke: 0.20000000298023224px #619b8a;
+    }
+
+    /* content stuff*/
+        .content,
+    .content * {
+        box-sizing: border-box;
+    }
+    .content {
+        background: linear-gradient(
+            152.49deg,
+            rgba(128, 203, 181, 1) 0%,
+            rgba(18, 46, 63, 1) 100%
+        );
+        padding: 10px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        height: 120vh;
+        position: relative;
+        overflow: hidden;
+        padding-top: 25px;
+    }
+    .input-div {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 11px 0px 11px 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 95%;
+        height: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+    .exercise-input {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+    }
+    .universal_input {
+        width: 75%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 2px;
+        border-radius: 40px;
+        font-size: 1.25rem;
+        text-align: center;
+        outline: none;
+        border: none;
+        background-color: #619b8a;
+        color: white;
+        transition: background-color 0.5s ease;
+    }
+    .universal_input:hover {
+        background-color: #40675c;
+        font-weight: bold;
+    }
+    .rectangle-1 {
+        background: #619b8a;
+        border-style: solid;
+        border-color: #619b8a;
+        border-width: 1px;
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .add-button {
+        position: relative;
+        background: #ffffff;
+        padding: 20px 35px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 20px;
+        width: 25%;
+        height: 25px;
+        overflow: hidden;
+        z-index: 1;
+        border: none;
+        transition: background-color 1s ease;
+    }
+
+    .add-button:hover {
+        background-color: rgb(0, 0, 0);
+        .add {
+            color: white
+        }
+    }
+    .add-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        padding: 2px; /* Thickness of the "border" */
+        background: linear-gradient(
+            90deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0); /* Respect border radius */
+        mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude; /* Cut out the middle */
+        z-index: -1; /* Send behind the button content */
+        transition: background 1.5s ease;
+    }
+
+    .add {
+        color: #000000;
+        text-align: center;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        position: relative;
+        width: 90px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 1s ease;
+    }
+
+    .tracker-list-div {
+        background: #ffffff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        height: 60%;
+        width: 100%;
+        position: relative;
+        overflow: auto;
+        padding-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      /* TRACKER STYLE STARTS HERE*/
+      .tracker-container {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-content: center;
+        align-content: center;
+      }
+      .x-button {
+        width: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        margin-top: 4px;
+        border-radius: 100px;
+        transition: filter .5s ease;
+      }
+      .x-button:hover {
+        filter: invert(1);
+      }
+      .tracker-info {
+        width: 100%;
+        display: flex;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #eaeaea;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        transition: background-color 1s ease;
+    }
+    .tracker-info:hover {
+        background-color: #619b8a;
+      }
+    .tracker-inputs {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .tracker-input-fields {
+        text-align: center;
+        margin: 0; 
+        border-radius: 10px;
+        font-size: 1.10rem;
+        outline: none;
+        border: none;
+        flex: 1; 
+        max-width: 20%;
+        margin: 2.5px;
+    }
+    
+    @media(min-width: 720px) {
+        .x-button {
+            width: 40px;
+            height: 40px;
+            margin-top: 3px;
+            margin-right: 10px;
+        }
+        .tracker-input-fields {
+            margin: 5px;
+        }
+        .tracker-container {
+            width: 90%
+        }
+        .tracker-list-div {
+            width: 90%;
+        }
+    }
+}
