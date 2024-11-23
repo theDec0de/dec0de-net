@@ -1,6 +1,6 @@
 import HypertrophyTracker from './HypertrophyTracker';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import "./app.css";
+import "./App.css";
 
 // <Link to="/HypertrophyTracker">HypertrophyTracker</Link>
 function App() {
