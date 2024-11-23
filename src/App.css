@@ -201,6 +201,28 @@ a {
   font-size: 1.75rem;
 }
 
+#wt-button {
+  background-image: url("/wt_icon.png");
+  background-size: 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: transparent;
+  text-decoration: none;
+  font-size: 0rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+  transition: filter .6s ease, height .6s ease, width .6s ease, color .6s ease, font-size .6s ease;
+}
+#wt-button:hover {
+  filter: invert(1);
+  width: 180px;
+  height: 180px;
+  color: black;
+  font-size: 1.75rem;
+}
+
 /* about section starts here*/
 .about-div {
   height: 100%;

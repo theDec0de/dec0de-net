@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import WeaponTracker from './WeaponTracker';
 
 const HypertrophyTracker = React.lazy(() => import('./HypertrophyTracker'));
 
@@ -27,7 +28,10 @@ function App() {
                                         <Link to="/HypertrophyTracker">
                                             <div className="circle_button" id="ht-button">Hypertrophy Tracker</div>
                                         </Link>
-                                        {["Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!"].map((button, index) => (
+                                        <Link to="/WeaponTracker">
+                                            <div className="circle_button" id="wt-button">Nier 1.2 Weapon Tracker</div>
+                                        </Link>
+                                        {["Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!"].map((button, index) => (
                                             <div key={index} className="circle_button">{button}</div>
                                         ))}
                                     </nav>
@@ -57,6 +61,14 @@ function App() {
                     element={
                         <Suspense fallback={<div>Loading Hypertrophy Tracker...</div>}>
                             <HypertrophyTracker />
+                        </Suspense>
+                    } 
+                />
+                <Route 
+                    path="/WeaponTracker" 
+                    element={
+                        <Suspense fallback={<div>Loading Weapon Tracker</div>}>
+                            <WeaponTracker />
                         </Suspense>
                     } 
                 />

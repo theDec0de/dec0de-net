@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "NierFont";
+    src: url("/nierfont.OTF");
+}
+
+.weapon-tracker {
+    background-color: white;
+
+    .weapon-tracker-banner {
+        background: #ffffff;
+        padding: 13px 10px 13px 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            135deg,
+        rgb(255, 255, 255) 0%,
+        rgb(0, 0, 0) 100%
+        );
+    }
+
+    .weapon-tracker-label {
+        color: #ffffff;
+        text-align: left;
+        font-family: "NierFont";
+        font-size: 3rem;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
