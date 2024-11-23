@@ -27,19 +27,16 @@ function App() {
                                         <Link to="/HypertrophyTracker">
                                             <div className="circle_button" id="ht-button">Hypertrophy Tracker</div>
                                         </Link>
-                                        {/* Other Buttons */}
-                                        {["b", "c", "d", "e", "f", "g", "h", "i"].map((button, index) => (
+                                        {["Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!"].map((button, index) => (
                                             <div key={index} className="circle_button">{button}</div>
                                         ))}
                                     </nav>
                                 </section>
-
                                 <div className="rectangle-3"></div>
-
                                 <section className="about-div">
                                     <h1 className="about-header silkscreen-regular">About</h1>
                                     <p className="about-text silkscreen-regular">
-                                        Welcome to dec0de.net! This is a portfolio site that also acts as a launchpad for all my new or current webapps.
+                                        Welcome to dec0de.net! This is a portfolio site that also acts as a launchpad for all my new or current webapps and content.
                                         <br /><br />
                                         I am a networking major that plays electric bass, enjoys making things, and goofing off. 
                                         You can follow me on 
