@@ -25,8 +25,8 @@ function HypertrophyTracker() {
     }
 
     function onAddButtonClicked() {
-        if (!inputs.exercise || !inputs.sets || !inputs.reps || !inputs.weight) {
-            alert("Please fill out all fields!");
+        if (!inputs.exercise && !inputs.sets && !inputs.reps && !inputs.weight) {
+            alert("Please fill out at least one field");
             return;
         }
 
