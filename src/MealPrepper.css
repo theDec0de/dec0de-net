@@ -1,0 +1,61 @@
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.meal-prepper {
+    background-color: white;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the whole page height 100% of the viewport */
+    background-color: white;
+    font-family: "Ubuntu", sans-serif;
+
+    .meal-prepper-banner {
+        background: #ffffff;
+        padding: 13px 10px 13px 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(
+            135deg,
+            #e5ba92,
+            #E5929D
+        );
+    }
+
+    .meal-prepper-label {
+        color: #ffffff;
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /*START content styling*/
+    .meal-preppr-content,
+    .meal-preppr-content * {
+        box-sizing: border-box;
+    }
+    .meal-preppr-content {
+        background: #ffffff;
+    padding: 26px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    overflow: auto;
+    }
+}

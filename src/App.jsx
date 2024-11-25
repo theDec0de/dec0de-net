@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import WeaponTracker from './WeaponTracker';
+import MealPrepper from './MealPrepper';
 
 const HypertrophyTracker = React.lazy(() => import('./HypertrophyTracker'));
 
@@ -20,9 +21,9 @@ function App() {
                             <main className="content">
                                 <img className="ellipse-1" src="/blacksabbath.png" alt="Black Sabbath" />
                                 <h1 className="kyle-wilcox silkscreen-regular">Kyle Wilcox</h1>
-                                
+                                <h3 className='handle-tag silkscreen-regular'>@DEC0DE</h3>
+                                <div className="rectangle-2"></div>
                                 <section className="dashboard">
-                                    <div className="rectangle-2"></div>
                                     <h2 className="dashboard2 silkscreen-regular">Dashboard</h2>
                                     <nav className="buttons">
                                         <Link to="/HypertrophyTracker">
@@ -31,13 +32,17 @@ function App() {
                                         <Link to="/WeaponTracker">
                                             <div className="circle_button" id="wt-button">Nier 1.2 Weapon Tracker</div>
                                         </Link>
-                                        {["Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!"].map((button, index) => (
+                                        <Link to="/MealPrepper">
+                                            <div className="circle_button" id="mp-button">Meal Prepper</div>
+                                        </Link>
+                                        {["Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!", "Coming soon!"].map((button, index) => (
                                             <div key={index} className="circle_button">{button}</div>
                                         ))}
                                     </nav>
                                 </section>
                                 <div className="rectangle-3"></div>
                                 <section className="about-div">
+                                    <img src="/about_image.jpg" alt="" id='about-image'/>
                                     <h1 className="about-header silkscreen-regular">About</h1>
                                     <p className="about-text silkscreen-regular">
                                         Welcome to dec0de.net! This is a portfolio site that also acts as a launchpad for all my new or current webapps and content.
@@ -55,7 +60,7 @@ function App() {
                     }
                 />
 
-                {/* Hypertrophy Tracker Page */}
+                {/* routes here */}
                 <Route 
                     path="/HypertrophyTracker" 
                     element={
@@ -69,6 +74,14 @@ function App() {
                     element={
                         <Suspense fallback={<div>Loading Weapon Tracker</div>}>
                             <WeaponTracker />
+                        </Suspense>
+                    } 
+                />
+                <Route 
+                    path="/MealPrepper" 
+                    element={
+                        <Suspense fallback={<div>Loading Meal Prepper</div>}>
+                            <MealPrepper />
                         </Suspense>
                     } 
                 />
