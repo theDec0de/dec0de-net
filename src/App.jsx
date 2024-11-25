@@ -43,15 +43,15 @@ function App() {
                                 <div className="rectangle-3"></div>
                                 <section className="about-div">
                                     <img src="/about_image.jpg" alt="" id='about-image'/>
-                                    <h1 className="about-header silkscreen-regular">About</h1>
+                                    <h1 className="about-header gradient-header silkscreen-regular">About</h1>
                                     <p className="about-text silkscreen-regular">
                                         Welcome to dec0de.net! This is a portfolio site that also acts as a launchpad for all my new or current webapps and content.
                                         <br /><br />
                                         I am a networking major that plays electric bass, enjoys making things, and goofing off. 
                                         You can follow me on 
-                                        <a href="https://www.instagram.com/skeletor08/"> Instagram</a>, 
-                                        <a href="https://www.linkedin.com/in/kylejwilcox/"> LinkedIn</a>, 
-                                        or <a href="https://github.com/theDec0de">GitHub</a>. 
+                                        <a className='gradient-header' href="https://www.instagram.com/skeletor08/"> Instagram</a>, 
+                                        <a className='gradient-header'href="https://www.linkedin.com/in/kylejwilcox/"> LinkedIn</a>, 
+                                        or <a className='gradient-header'href="https://github.com/theDec0de">GitHub</a>. 
                                         Thanks for visiting!
                                     </p>
                                 </section>

@@ -9,6 +9,12 @@ a:visited {
   color: #ff00fb;
 }
 
+.gradient-header {
+  background: -webkit-linear-gradient(135deg, rgba(255, 0, 251, 1) 0%, rgba(103, 3, 242, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .silkscreen-regular {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
@@ -20,7 +26,6 @@ a:visited {
     font-weight: 700;
     font-style: normal;
  }
-  
 
  /* START BANNER CSS*/
 .header-banner,
