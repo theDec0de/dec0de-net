@@ -42,10 +42,10 @@ function App() {
                                 </section>
                                 <div className="rectangle-3"></div>
                                 <section className="about-div">
-                                    <img src="/about_image.jpg" alt="" id='about-image'/>
+                                    <img src="/logo_desktop.png" alt="" id='about-image'/>
                                     <h1 className="about-header gradient-header silkscreen-regular">About</h1>
                                     <p className="about-text silkscreen-regular">
-                                        Welcome to dec0de.net! This is a portfolio site that also acts as a launchpad for all my new or current webapps and content.
+                                        Welcome to dec0de.net! This is a portfolio site that also acts as a launchpad for all my new or current webapps and content. These tools are just personal projects meant for your own personal use, nothing major.
                                         <br /><br />
                                         I am a networking major that plays electric bass, enjoys making things, and goofing off. 
                                         You can follow me on 
@@ -54,6 +54,24 @@ function App() {
                                         or <a className='gradient-header'href="https://github.com/theDec0de">GitHub</a>. 
                                         Thanks for visiting!
                                     </p>
+                                </section>
+                                <section className="post-div">
+                                    <img src="/ht_example.png" alt="" className='post-image'/>
+                                    <h1 className="post-header ht-gradient-header silkscreen-regular">Hypertrophy Tracker</h1>
+                                    <p className="post-text silkscreen-regular">
+                                        Hypertrophy Tracker is a tool designed to help you keep track of your PRs during strength training.
+                                        <br /><br />
+                                        As of now it is very basic, you just enter the type of excerise you're doing, the amount of sets, the amount of repititions, and the weight you're doing it at. Data is stored locally and is persistent even when the page is closed or reloaded.
+                                    </p>
+                                </section>
+                                <section className="post-div">
+                                    <img src="/about_image.jpg" alt="" className='post-image'/>
+                                    <h1 className="post-header gradient-header silkscreen-regular">Lorem Ipsum</h1>
+                                    <p className="post-text silkscreen-regular">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, recusandae! Doloribus temporibus fuga sint quaerat autem eum dolorem repudiandae nemo ut, nobis quod dolor vel, velit consequuntur! Cumque, repellat voluptas!
+                                        <br /><br />
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate accusantium tempore saepe voluptate, hic, dolor, asperiores est quis quam incidunt dicta velit repudiandae mollitia minima ex nulla obcaecati! Deleniti?
+                                        </p>
                                 </section>
                             </main>
                         </>
