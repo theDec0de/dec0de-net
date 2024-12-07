@@ -6,6 +6,9 @@
 .weapon-tracker {
     background-color: white;
 
+    .nav-dropdown-div {
+        font-family: "NierFont";
+    }
     .weapon-tracker-banner {
         background: #ffffff;
         padding: 13px 10px 13px 10px;

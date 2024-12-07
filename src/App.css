@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #202020;
 }
 
 a {
@@ -51,23 +51,20 @@ a:visited {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  align-items: center;
-  justify-content: center;
+  align-items: center;  /* This centers the children vertically */
+  justify-content: center; /* This centers the children horizontally */
   height: 58px;
   position: relative;
-  overflow: hidden;
 }
 
-.dec-0-de-net {
+.dec0de_header {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-size: 36px;
   font-weight: 400;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  -webkit-text-stroke: 0.20000000298023224px #ffffff;
+  margin-bottom: 6px;
+  -webkit-text-stroke: 0.2px #ffffff;
 }
 /* END BANNER CSS*/
 
@@ -76,7 +73,7 @@ a:visited {
   box-sizing: border-box;
 }
 .content {
-  background: #000000;
+  background: #202020;
   padding: 10px 0px 10px 0px;
   display: flex;
   flex-direction: column;
@@ -84,7 +81,6 @@ a:visited {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  overflow: hidden;
 }
 .ellipse-1 {
   border-radius: 50%;
@@ -129,7 +125,6 @@ a:visited {
   flex-shrink: 0;
   height: 55vh;
   position: relative;
-  overflow: hidden;
 }
 .rectangle-2 {
   background: linear-gradient(
@@ -308,8 +303,9 @@ a:visited {
 }
 
 .about-text {
+  text-align: center;
   color: #ffffff;
-  padding: 5px;
+  padding: 20px;
   font-size: 1.25rem;
   font-weight: 400;
   width: 100%;
@@ -342,8 +338,9 @@ a:visited {
 }
 
 .post-text {
+  text-align: center;
   color: #ffffff;
-  padding: 5px;
+  padding: 20px;
   font-size: 1.25rem;
   font-weight: 400;
   width: 100%;

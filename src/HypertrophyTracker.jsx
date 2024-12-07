@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Tracker from "./Components/Tracker";
 import "./HypertrophyTracker.css";
+import NavBar from "./Components/NavBar";
 
 function HypertrophyTracker() {
     const [trackers, setTrackers] = useState(() => {
@@ -51,6 +52,7 @@ function HypertrophyTracker() {
     return (
         <div className="hypertrophy_tracker">
             <div className="header-banner">
+                <NavBar/>
                 <div className="hypertrophy-tracker-label">Hypertrophy Tracker</div>
             </div>
             <div className="content">

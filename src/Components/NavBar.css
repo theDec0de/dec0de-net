@@ -1,0 +1,102 @@
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav_button {
+        background: none;
+        border: none;
+        position: absolute;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        transition: background-color .5s ease;
+    }
+    .nav_button:hover {
+        background-color: white;
+    }
+    #button_image {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*DROPDOWN CSS STARTS HERE*/
+    .nav-dropdown-div {
+        top: 58px;
+        left: 0; 
+        height: calc(100vh - 58px); /* Full height minus the header */
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Optional: center text within each item */
+    }
+
+    #nav-logo {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 360px;
+        margin-bottom: 30px;
+    }
+    #nav-name {
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    hr {
+        width: 100%; /* Make the HR take up the full width */
+        height: 1px; /* Set the height to 1px to make it a thin line */
+        background-color: #ccc; /* Set the color of the line (light gray) */
+        border: none; /* Remove any default border */
+        margin: 10px 0; /* Optional: space above and below the HR */
+    }
+
+    .nav-dropdown-list {
+        list-style: none;
+        padding: 0;
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+    .nav-item {
+        font: 'roboto';
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+    .nav-item button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .nav-item button:hover {
+        background-color: grey;
+    }
+}
+
+@media(min-width: 750px) {
+    .nav_bar {
+        .nav-dropdown-div {
+            width: 33%;
+        }
+    }
+    .nav-dimmer {
+        top: 58px;
+        right: 0; 
+        height: calc(100vh - 58px);
+        width: 67%;
+        background-color: white;
+        position: fixed;
+        z-index: 99998;
+        background-color: rgba(59, 59, 59, 0.8);
+    }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import WeaponTracker from './WeaponTracker';
 import MealPrepper from './MealPrepper';
+import NavBar from './Components/NavBar';
 
 const HypertrophyTracker = React.lazy(() => import('./HypertrophyTracker'));
 
@@ -16,10 +17,11 @@ function App() {
                     element={
                         <>
                             <header className="header-banner silkscreen-regular">
-                                <div className="dec-0-de-net">DEC0DE.NET</div>
+                                <NavBar/>
+                                <h1 className="dec0de_header">DEC0DE.NET</h1>
                             </header>
                             <main className="content">
-                                <img className="ellipse-1" src="/blacksabbath.png" alt="Black Sabbath" />
+                                <img className="ellipse-1" src="/profile_pic.png" alt="profile pic" />
                                 <h1 className="kyle-wilcox silkscreen-regular">Kyle Wilcox</h1>
                                 <h3 className='handle-tag silkscreen-regular'>@DEC0DE</h3>
                                 <div className="rectangle-2"></div>
@@ -60,10 +62,11 @@ function App() {
                                     <h1 className="post-header ht-gradient-header silkscreen-regular">Hypertrophy Tracker</h1>
                                     <p className="post-text silkscreen-regular">
                                         Hypertrophy Tracker is a tool designed to help you keep track of your PRs during strength training.
-                                        <br /><br />
+                                        <br/><br/>
                                         As of now it is very basic, you just enter the type of excerise you're doing, the amount of sets, the amount of repititions, and the weight you're doing it at. Data is stored locally and is persistent even when the page is closed or reloaded.
                                     </p>
                                 </section>
+                                {/*
                                 <section className="post-div">
                                     <img src="/about_image.jpg" alt="" className='post-image'/>
                                     <h1 className="post-header gradient-header silkscreen-regular">Lorem Ipsum</h1>
@@ -73,6 +76,7 @@ function App() {
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis cupiditate accusantium tempore saepe voluptate, hic, dolor, asperiores est quis quam incidunt dicta velit repudiandae mollitia minima ex nulla obcaecati! Deleniti?
                                         </p>
                                 </section>
+                                */}
                             </main>
                         </>
                     }
