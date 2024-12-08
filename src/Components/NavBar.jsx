@@ -5,6 +5,7 @@ import { Link, Router } from 'react-router-dom';
 function NavBar() {
     const [open, setOpen] = useState(false);
 
+    /*
     useEffect(() => {
         if (open) {
             document.body.style.overflow = 'hidden';
@@ -15,7 +16,7 @@ function NavBar() {
             document.body.style.overflow = 'auto';
         };
     }, [open]);
-
+    */
     return (
         <nav className='nav_bar'>
             <button 
@@ -39,7 +40,7 @@ function DropdownMenu() {
         <>
         <div className='nav-dropdown-div'>
             <img src='/profile_pic.png' id='nav-logo'></img>
-            <h1 id='nav-name'>Kyle Wilcox</h1>
+            <h1 id='nav-name'>Menu</h1>
             <hr id='nav-divider'></hr>
             <ul className='nav-dropdown-list'>
                 <Link to="/"><li className='nav-item'><button>Home</button></li></Link>

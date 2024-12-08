@@ -57,6 +57,14 @@ a:visited {
   position: relative;
 }
 
+.header-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
 .dec0de_header {
   color: #ffffff;
   text-align: center;
@@ -81,6 +89,7 @@ a:visited {
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  margin-top: 58px;
 }
 .ellipse-1 {
   border-radius: 50%;
