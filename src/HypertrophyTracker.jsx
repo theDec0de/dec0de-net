@@ -51,7 +51,7 @@ function HypertrophyTracker() {
 
     return (
         <div className="hypertrophy_tracker">
-            <div className="header-banner">
+            <div className="ht-banner">
                 <NavBar/>
                 <div className="hypertrophy-tracker-label">Hypertrophy Tracker</div>
             </div>
