@@ -1,0 +1,45 @@
+.menu-item,
+.menu-item * {
+  box-sizing: border-box;
+}
+.menu-item {
+  background: #404040;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  height: 60px;
+}
+.menu-item-img {
+  flex-shrink: 0;
+  width: 41px;
+  height: 40px;
+  position: relative;
+  object-fit: cover;
+}
+.recipe-text {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.dots-1 {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  object-fit: cover;
+}

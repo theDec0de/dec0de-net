@@ -1,61 +1,104 @@
-.ubuntu-regular {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.nav_bar {
+  font: "roboto";
+}
 
 .meal-prepper {
-    background-color: white;
-    font-family: "Ubuntu", sans-serif;
+  .meal-prepper-header,
+  .meal-prepper-header * {
+    box-sizing: border-box;
+  }
+  .meal-prepper-header {
+    background: #39393a;
+    padding: 13px 10px 13px 10px;
     display: flex;
-    flex-direction: column;
-    height: 100vh; /* Make the whole page height 100% of the viewport */
-    background-color: white;
-    font-family: "Ubuntu", sans-serif;
-
-    .meal-prepper-banner {
-        background: #ffffff;
-        padding: 13px 10px 13px 10px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        height: 58px;
-        position: relative;
-        overflow: hidden;
-        background: linear-gradient(
-            135deg,
-            #e5ba92,
-            #E5929D
-        );
-    }
-
-    .meal-prepper-label {
-        color: #ffffff;
-        text-align: left;
-        font-size: 2.5rem;
-        font-weight: 400;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    /*START content styling*/
-    .meal-preppr-content,
-    .meal-preppr-content * {
-        box-sizing: border-box;
-    }
-    .meal-preppr-content {
-        background: #ffffff;
-    padding: 26px 0px 10px 0px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    position: relative;
+    overflow: hidden;
+  }
+  .meal-prepper-label {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 133, 82, 1) 0%,
+      rgba(233, 215, 88, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 26px;
     align-items: center;
     justify-content: flex-start;
-    flex-grow: 1;
-    overflow: auto;
-    }
+    -webkit-text-stroke: 0.20000000298023224px #000000;
+  }
+
+  /*CONTENT CSS STARTS HERE*/
+  .meal-prepper-content,
+  .meal-prepper-content * {
+    box-sizing: border-box;
+  }
+  .meal-prepper-content {
+    background: #39393a;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    position: relative;
+  }
+  .food-menu {
+    background: #39393a;
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .recipe-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .divider {
+    background: #494949;
+    border-radius: 20px;
+    flex-shrink: 0;
+    width: 2px;
+    height: 30px;
+    position: relative;
+  }
+  .food-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    width: 80px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
