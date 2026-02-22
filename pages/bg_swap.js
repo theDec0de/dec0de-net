@@ -28,17 +28,17 @@ function update_bg() {
 
     switch (index) {
         case 0:
-            body.style.backgroundImage = 'url("../img/bg_new.png")'
+            body.style.backgroundImage = 'url("img/bg_new.png")'
             body.style.backgroundRepeat = "repeat"
             body.style.backgroundSize = "10%"
             break;
         case 1:
-            body.style.backgroundImage = 'url("../img/bs_green3.png")'
+            body.style.backgroundImage = 'url("img/bs_green3.png")'
             body.style.backgroundRepeat = "no-repeat"
             body.style.backgroundSize = "100%"
             break;    
         case 2:
-            body.style.backgroundImage = 'url("../img/h_and_h_ascii.png")'
+            body.style.backgroundImage = 'url("img/h_and_h_ascii.png")'
             body.style.backgroundRepeat = "cover"
             body.style.backgroundSize = "100%"
             body.style.backgroundPosition = "center 40%"

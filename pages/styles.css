@@ -73,7 +73,7 @@ table {
 body {
     background-color: black;
 
-    background-image: url("../img/bg_new.png");
+    background-image: url("img/bg_new.png");
     background-repeat: repeat;
     background-size: 15%;
 }
