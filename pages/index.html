@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEC0DE.NET</title>
+    <link rel="stylesheet" href="../pages/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main_div" class="vt323-regular">
+        <div id="header_div">
+            <h1 id="header_div_h1"> > DEC0DE.NET<b id="cursor" style="font-size: 24pt;">▮</b></h1>
+                <ul id="header_div_nav">
+                    <li class="buttons" id="minus_button">
+                        &lt;&lt;
+                    </li>
+                    <li id="index_counter">0</li>
+                    <li class="buttons" id="plus_button">
+                        &gt;&gt;
+                    </li>
+                </ul>
+        </div>
+        <div id="body_div">
+            <div id="content">
+                <div id="terminal">
+                    <iframe src="../pages/menu.html"></iframe>
+                </div>
+                <div id="player">
+                    <container id="player_controls">
+                        <span class="player_control_buttons" id="prev_button">&lt;&lt;</span>
+                        <span class="player_control_buttons" id="play_button">Play</span>
+                        <span class="player_control_buttons" id="next_button">&gt;&gt;</span>
+                    </container>
+                    <hr>
+                    <container id="player_name">
+                        <audio id="player_audio"></audio>
+                        <h1 id="player_label">0 | No Music Selected</h1>
+                    </container>
+                    <hr>
+                    <container id="player_icon">
+                        <div class="slider" data-min="0" data-max="100" data-value="40">
+                            <div class="slider-track">
+                              <div class="slider-fill"></div>
+                              <div class="slider-thumb"></div>
+                            </div>
+                            <input type="range" min="0" max="100" value="10" class="slider-input">
+                          </div>
+                    </container>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../pages/bg_swap.js"></script>
+    <script src="../pages/audio_handler.js"></script>
+</body>
+</html>
