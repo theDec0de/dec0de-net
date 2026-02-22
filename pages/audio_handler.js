@@ -52,7 +52,7 @@ function update_player_index(index) {
             audio.src = ""
             break;
         case 1:
-            audio.src = "/audio/lains_theme.mp3"
+            audio.src = "../audio/lains_theme.mp3"
             player_label.textContent = index+" | Lain's Theme.mp3"
             break;
         case 2:
