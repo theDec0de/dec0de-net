@@ -245,12 +245,33 @@ hr {
     #terminal {
         width: 95%;
     }
+    #player {
+        width:95%;
+    }
 }
 
 @media screen and (max-width: 500px) {
     #terminal {
         padding: 2px;
         width: 100%;
+    }
+    #player {
+        width:100%;
+        height: 85px;
+    }
+    #player_controls {
+        flex: 1;
+        padding: 5px;
+        font-size: 22px;
+    }
+    #player_name {
+        flex: 2;
+        padding: 5px;
+        font-size: 22px;
+    }
+    #player_icon {
+        flex: 1;
+        padding: 5px;
     }
 
     #header_div_h1 {

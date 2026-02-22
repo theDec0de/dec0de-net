@@ -23,11 +23,11 @@ play_button.addEventListener("click", function() {
 
 prev_button.addEventListener("click", function() {
     index--
-    update_player_index(index)
+    update_player_index()
 })
 next_button.addEventListener("click", function() {
     index++
-    update_player_index(index)
+    update_player_index()
 })
 
 function update_music(is_playing) {
@@ -38,11 +38,12 @@ function update_music(is_playing) {
     }
 }
 
-function update_player_index(index) {
+function update_player_index() {
 
     if (index < 0) {
         index = 0
-    } else if (index > 3) {
+    } 
+    if (index >= 3) {
         index = 3
     }
 
