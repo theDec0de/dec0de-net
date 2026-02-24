@@ -5,7 +5,8 @@ const minus_button = document.getElementById("minus_button")
 const index_counter = document.getElementById("index_counter")
 
 var body = document.body
-var index = 0;
+var index = 0
+const index_max = 3
 
 plus_button.addEventListener("click", function() {
     index++
@@ -19,18 +20,19 @@ minus_button.addEventListener("click", function() {
 
 function update_bg() {
     if (index < 0) {
+        index = index_max
+    } else if (index > index_max) {
         index = 0
-    } else if (index > 2) {
-        index = 2
     }
 
     index_counter.textContent = index
 
     switch (index) {
         case 0:
-            body.style.backgroundImage = 'url("img/bg_new.png")'
-            body.style.backgroundRepeat = "repeat"
-            body.style.backgroundSize = "10%"
+            body.style.backgroundImage = 'url("img/uss_voyager_ascii.png")'
+            body.style.backgroundRepeat = "cover"
+            body.style.backgroundSize = "100%"
+            body.style.backgroundPosition = "center 40%"
             break;
         case 1:
             body.style.backgroundImage = 'url("img/bs_green3.png")'
@@ -42,6 +44,11 @@ function update_bg() {
             body.style.backgroundRepeat = "cover"
             body.style.backgroundSize = "100%"
             body.style.backgroundPosition = "center 40%"
+            break;
+        case 3:
+            body.style.backgroundImage = 'url("img/bg_new.png")'
+            body.style.backgroundRepeat = "repeat"
+            body.style.backgroundSize = "10%"
             break;
     }
 }

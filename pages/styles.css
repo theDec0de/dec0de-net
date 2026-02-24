@@ -73,9 +73,9 @@ table {
 body {
     background-color: black;
 
-    background-image: url("img/bg_new.png");
-    background-repeat: repeat;
-    background-size: 15%;
+    background-image: url("img/uss_voyager_ascii.png");
+    background-repeat: cover;
+    background-size: 100%;
 }
 
 /*header styling */
@@ -136,7 +136,7 @@ li {
     border-style: solid;
     border-color: #228B22;
     border-width: 2px;
-    background: rgba(0, 0, 0, 80%);
+    background: rgba(0, 0, 0, 90%);
     color: #228B22;
     padding: 10px;
     width: 65%;

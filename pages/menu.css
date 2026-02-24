@@ -79,6 +79,7 @@ ul {
 a {
     color:#228B22;
     text-decoration: none;
+    width: 33%;
 }
 a:hover {
     text-decoration:underline;
