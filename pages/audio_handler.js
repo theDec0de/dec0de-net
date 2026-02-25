@@ -57,12 +57,12 @@ function update_player_index() {
             player_label.textContent = index+" | Lain's Theme.mp3"
             break;
         case 2:
-            player_label.textContent = index+" | N/A"
-            audio.src = ""
+            player_label.textContent = index+" | Coffin Nails.mp3"
+            audio.src = "audio/coffin_nails_MF_DOOM.mp3"
             break;
         case 3:
-            player_label.textContent = index+" | N/A"
-            audio.src = ""
+            player_label.textContent = index+" | Fly Me To The Moon.mp3"
+            audio.src = "audio/fly_me_to_the_moon.mp3"
             break;
     }
 
