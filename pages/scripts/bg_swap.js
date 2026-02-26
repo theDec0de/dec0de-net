@@ -6,7 +6,7 @@ const index_counter = document.getElementById("index_counter")
 
 var body = document.body
 var index = 0
-const index_max = 3
+const index_max = 5
 
 plus_button.addEventListener("click", function() {
     index++
@@ -47,6 +47,17 @@ function update_bg() {
             break;
         case 3:
             body.style.backgroundImage = 'url("img/bg_new.png")'
+            body.style.backgroundRepeat = "repeat"
+            body.style.backgroundSize = "20%"
+            break;
+        case 4:
+            body.style.backgroundImage = 'url("img/holy_diver.png")'
+            body.style.backgroundRepeat = "stretch"
+            body.style.backgroundSize = "100%"
+            body.style.backgroundPosition = "center 40%"
+            break;
+        case 5:
+            body.style.backgroundImage = 'url("img/grid.png")'
             body.style.backgroundRepeat = "repeat"
             body.style.backgroundSize = "10%"
             break;
