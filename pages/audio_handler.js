@@ -114,6 +114,5 @@ document.querySelectorAll(".slider").forEach(slider => {
       updateUI(getValueFromPosition(e.clientX));
     });
   
-    // Initialize correctly
     updateUI(+input.value);
   });
