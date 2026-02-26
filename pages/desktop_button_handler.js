@@ -13,3 +13,7 @@ document.getElementById("hobbies_button").addEventListener("click", function() {
 document.getElementById("nn_button").addEventListener("click", function() {
     window.location.href = "net_neighbors.html"
 })
+
+document.getElementById("foundation_button").addEventListener("click", function() {
+    window.location.href = "foundation_files.html"
+})
