@@ -143,3 +143,29 @@ body {
     border: solid 2px #228B22;
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+    .file_icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 8%;
+        margin: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-wrap-mode: wrap;
+    }
+    
+    .file_icon img {
+        width: 90%;
+    }
+    
+    .file_icon p {
+        font-size: 12px;
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+}

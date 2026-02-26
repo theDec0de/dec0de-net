@@ -7,6 +7,7 @@ const palyer_audio = document.getElementById("player_audio")
 const audio = new Audio()
 
 var index = 0
+const m_index_max = 4
 let playing = false
 
 play_button.addEventListener("click", function() {
@@ -41,10 +42,10 @@ function update_music(is_playing) {
 function update_player_index() {
 
     if (index < 0) {
-        index = 0
+        index = m_index_max
     } 
-    if (index >= 3) {
-        index = 3
+    if (index >= m_index_max) {
+        index = 0
     }
 
     switch (index) {

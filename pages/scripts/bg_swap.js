@@ -59,7 +59,7 @@ function update_bg() {
         case 5:
             body.style.backgroundImage = 'url("img/grid.png")'
             body.style.backgroundRepeat = "repeat"
-            body.style.backgroundSize = "10%"
+            body.style.backgroundSize = "20%"
             break;
     }
 }
