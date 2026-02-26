@@ -73,7 +73,7 @@ table {
 body {
     background-color: black;
 
-    background-image: url("img/uss_voyager_ascii.png");
+    background-image: url("../img/uss_voyager_ascii.png");
     background-repeat: cover;
     background-size: 100%;
 }
