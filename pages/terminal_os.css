@@ -141,4 +141,5 @@ body {
     height: 100%;
     padding: 3px;
     border: solid 2px #228B22;
+    cursor: pointer;
 }
