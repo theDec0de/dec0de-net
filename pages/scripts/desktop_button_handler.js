@@ -17,3 +17,11 @@ document.getElementById("nn_button").addEventListener("click", function() {
 document.getElementById("foundation_button").addEventListener("click", function() {
     window.location.href = "foundation_files.html"
 })
+
+document.getElementById("window_button").addEventListener("click", function() {
+    document.getElementById("new_window").classList.remove("hide_window")
+})
+
+document.getElementById("close_button").addEventListener("click", function() {
+    document.getElementById("new_window").classList.add("hide_window")
+})

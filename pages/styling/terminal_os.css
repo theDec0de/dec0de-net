@@ -144,6 +144,54 @@ body {
     cursor: pointer;
 }
 
+
+/* window styling*/
+#new_window {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
+#new_window_title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    border-bottom: solid 2px #228B22;
+}
+#close_button {
+    border: solid 2px #228B22;
+    font-size: 22px;
+    margin: 5px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hide_window {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 500px) {
     .file_icon {
         display: flex;
