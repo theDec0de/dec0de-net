@@ -26,13 +26,13 @@ document.getElementById("foundation_button").addEventListener("click", function(
 document.getElementById("snake_button").addEventListener("click", function() {
     window_.classList.remove("hide_window")
     window_frame.src = "snake_game.html"
-    window_header.textContent = "Snake Game.exe"
+    window_header.textContent = "Snake Game"
 })
 
 document.getElementById("warp_button").addEventListener("click", function() {
     window_.classList.remove("hide_window")
     window_frame.src = ""
-    window_header.textContent = "Warp.exe"
+    window_header.textContent = "Warp"
 })
 
 document.getElementById("close_button").addEventListener("click", function() {

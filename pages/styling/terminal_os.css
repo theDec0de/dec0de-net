@@ -82,10 +82,10 @@ body {
     height: 100%;
     flex: 1;
     margin: 10px;
-    background-size: 40%;
+    background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../img/arty_loaf_ascii.png");
+    background-image: url("../img/arty_ascii.png");
 
     display: flex;
     flex-direction:column;
