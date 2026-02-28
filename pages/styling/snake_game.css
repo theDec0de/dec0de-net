@@ -60,7 +60,6 @@ table {
 /*
   #023020 dark green
   #228B22 forrest green
-  
 */
 body {
     color:#228B22;
@@ -71,13 +70,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/dotted_bg.png");
+    background-size: 100%;
+}
+
+#main {
+    border: solid #228B22 2px;
 }
 
 #game_bar {
     padding: 10px;
     display: flex;
-    min-width: 400px;
     border: solid 2px #144e14;
+    background-color: black;
 
     align-items: center;
 }

@@ -36,5 +36,6 @@ document.getElementById("warp_button").addEventListener("click", function() {
 })
 
 document.getElementById("close_button").addEventListener("click", function() {
+    window_frame.src = ""
     window_.classList.add("hide_window")
 })

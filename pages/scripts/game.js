@@ -1,3 +1,15 @@
+//prevent that stupid scroll bar function with the arrow keys
+window.addEventListener("keydown", function(e) {
+    if (
+        e.key === "ArrowUp" ||
+        e.key === "ArrowDown" ||
+        e.key === "ArrowLeft" ||
+        e.key === "ArrowRight"
+    ) {
+        e.preventDefault();
+    }
+});
+
 var s;
 var step = 20;
 var food;
@@ -7,13 +19,17 @@ var bg_col;
 var food_col;
 var grid_col;
 
+var window_width = 400;
+var window_height = 400;
+
 function setup() {
+    document.getElementById("game_bar").style.width = window_width + "px"
     snake_col = color(0, 255, 0)
-    grid_col = color(0,100, 0)
+    grid_col = color("#228B22")
     bg_col = color(0)
     food_col = color(255,0,0)
 
-    createCanvas(400, 400)
+    createCanvas(window_width, window_height)
     frameRate(10)
     s = new snake()
     pick_location()
@@ -22,6 +38,8 @@ function setup() {
 function draw() {
     noStroke()
     background(bg_col)
+
+    setup_grid()
 
     s.death()
     s.update()
@@ -35,7 +53,10 @@ function draw() {
         update_score()
     }
 
-    setup_grid()
+    //check win con
+    if (s.total >= (window_height * window_width)/step) {
+        document.getElementById("score_counter").innerText = "You Win!"
+    }
 }
 
 function setup_grid () {
@@ -135,7 +156,15 @@ function snake() {
     }
 
     this.show = function () {
+        //col and row highlight
+        stroke(0,0,200)
+        rect(this.x-(window_width), this.y, window_width*2, step)
+        stroke(0,0,200)
+        rect(this.x, this.y-(window_height), step, window_height*2)
+        
+        //snake itself 
         fill(0, 255, 0)
+        noStroke()
         for (var i=0; i < this.total; i++) {
             rect(this.tail[i].x, this.tail[i].y, step, step)
         }
