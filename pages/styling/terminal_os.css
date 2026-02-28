@@ -166,16 +166,21 @@ iframe {
 
 #new_window_title {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
     background-color: black;
     border-bottom: solid 2px #228B22;
+    padding: 10px 20px;
 }
+
+#new_window_text {
+    font-size: 30px;
+    margin: 0;
+}
+
 #close_button {
     border: solid 2px #228B22;
     font-size: 22px;
-    margin: 5px;
-    margin-right: 20px;
     padding: 5px 10px;
     cursor: pointer;
 }

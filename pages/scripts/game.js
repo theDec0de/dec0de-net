@@ -14,7 +14,7 @@ function setup() {
     food_col = color(255,0,0)
 
     createCanvas(400, 400)
-    frameRate(5)
+    frameRate(10)
     s = new snake()
     pick_location()
 }
