@@ -81,7 +81,7 @@ body {
 /*header styling */
 
 #header_div {
-    padding: 10px;
+    padding: 5px;
 
     display: flex;
     flex-direction: row;
@@ -92,11 +92,11 @@ body {
 }
 
 #header_div_h1 {
-    font-size: 30pt;
+    font-size: 26pt;
 }
 
 #header_div_nav {
-    font-size: 35pt;
+    font-size: 31pt;
     margin-left: auto;
     display: flex;
     padding: 5px;
@@ -125,7 +125,7 @@ li {
 }
 
 #content {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@ li {
     width: 65%;
     height: 55px;
     overflow-y: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     overflow: hidden;
 
     display: flex;
